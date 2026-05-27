@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8f715d3431.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Todos.css" />
+    <title>Todo List</title>
+    <script src="Todos.js" defer></script>
+  </head>
+  <body>
+    <div class="todos-bg-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex flex-row justify-content-end">
+              <h1 class="logged-user-name">
+                Welcome,
+                <span
+                  class="user-name logged-user-name"
+                  id="loggedUserName"
+                ></span>
+              </h1>
+            </div>
+            <div
+              class="d-flex flex-row justify-content-center align-items-center gap-3"
+            >
+              <h1 class="todos-heading">Todo List</h1>
+            </div>
+            <h1 class="create-task-heading">
+              Create <span class="create-task-heading-subpart">Task</span>
+            </h1>
+            <div class="d-flex gap-2">
+              <div class="d-flex flex-row justify-content-between gap-2 w-100">
+                <input
+                  type="search"
+                  id="todoUserInput"
+                  class="todo-user-input"
+                  placeholder="What needs to be done?"
+                />
+                <button class="mic-button" id="micButton">
+                  <i class="fa-solid fa-microphone" id="micIcon"></i>
+                </button>
+              </div>
+
+              <input type="number" id="todoCount" placeholder="Count" min="1" />
+            </div>
+            <button class="button" id="addTodoButton">Add</button>
+            <button class="button btn-align" id="clearTodoButton">Clear</button>
+            <select id="priority" class="priority-select">
+              <option value="all">All</option>
+              <option value="completed">Completed</option>
+              <option value="inProgress">In Progress</option>
+              
+            </select>
+
+            <h1 class="todo-items-heading">
+              My <span class="todo-items-heading-subpart">Tasks</span>
+            </h1>
+            <input
+              type="search"
+              id="searchInput"
+              placeholder="Search tasks..."
+              value=""
+              class="search-input"
+            />
+            <ul class="todo-items-container mb-3" id="todoItemsContainer"></ul>
+            <button class="button" id="logoutButton">Logout</button>
+          </div>
+        </div>
+      </div>
+          <div class="status-bar text-white">
+            <p class="status-bar-text">All: <span id="totalTodos">0</span> </p>
+            <p class="status-bar-text">Active: <span id="activeTodos">0</span> </p>
+            <p class="status-bar-text">Completed: <span id="completedTodos">0</span> </p>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

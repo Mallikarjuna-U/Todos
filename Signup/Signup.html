@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/8f715d3431.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Signup.css" />
+    <script src="Signup.js" defer></script>
+    <title>Sign Up Page</title>
+  </head>
+  <body class="container">
+    <div class="row">
+      <div class="col-12">
+        <form class="form-container">
+          <h1 class="signup-heading">Sign Up</h1>
+          <div class="input-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" autocomplete="name" />
+          </div>
+          <div class="input-container">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" autocomplete="email" />
+          </div>
+          <div class="input-container">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              autocomplete="password"
+            />
+          </div>
+          <div class="input-container">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="password"
+              autocomplete="password"
+            />
+          </div>
+          <button type="submit" id="submit" class="signup-btn">Sign Up</button>
+          <p class="login-link">
+            Already have an account?
+            <a href="../Login/index.html">Login</a>
+          </p>
+          <p class="errorMsg" id="errorMsg"></p>
+          <p class="success-message" id="successMsg"></p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

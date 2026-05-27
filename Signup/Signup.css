@@ -1,0 +1,122 @@
+/* Full page container */
+.container {
+  min-height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background-image: url("../resource/signup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Signup form */
+.form-container {
+  width: 100%;
+  max-width: 450px;
+
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Card hover effect */
+.form-container:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Input wrapper */
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 18px;
+}
+
+/* Labels */
+label {
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Inputs */
+input {
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  font-size: 16px;
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #4c63b6;
+
+  box-shadow: 0 0 10px rgba(76, 99, 182, 0.4);
+
+  transform: scale(1.02);
+}
+
+/* Signup button */
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(to right, #4c63b6, #6f86ff);
+
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.signup-btn:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(76, 99, 182, 0.4);
+}
+
+/* Click animation */
+.signup-btn:active {
+  transform: scale(0.97);
+}
+
+/* Error message */
+.errorMsg {
+  color: #ff3b3b;
+  font-size: 13px;
+
+  margin-top: 5px;
+
+  min-height: 18px;
+}
