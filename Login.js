@@ -20,6 +20,6 @@ submit.onclick = (event) => {
   } else {
     errorMsg.textContent = "";
     localStorage.setItem("loggedUser", JSON.stringify(existingUser));
-    window.location.replace("../Todos/Todos.html");
+    window.location.replace("Todos.html");
   }
 };

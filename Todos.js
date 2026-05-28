@@ -1,6 +1,6 @@
 if (typeof window !== "undefined") {
   if (!localStorage.getItem("loggedUser")) {
-    window.location.replace("../index.html");
+    window.location.replace("index.html");
   }
   let loggedUser = JSON.parse(localStorage.getItem("loggedUser"));
   document.getElementById("loggedUserName").textContent = loggedUser.name;
@@ -30,7 +30,7 @@ if (typeof window !== "undefined") {
   document.getElementById("searchInput").oninput = searchTodo;
   document.getElementById("logoutButton").onclick = () => {
     localStorage.removeItem("loggedUser");
-    window.location.replace("../index.html");
+    window.location.replace("index.html");
   };
   updateTodoStatus();
 
